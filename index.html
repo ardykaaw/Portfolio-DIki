@@ -115,11 +115,11 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <a class="button button--colorful button--margin" href="assets/cvdiki.pdf" download="cvdiki.pdf">DOWNLOAD CV</a>
+              <a class="button button--colorful button--margin" href="#" onclick="confirmDownload()">DOWNLOAD CV</a>
             </div>
             <div class="col-md-4">
               <a class="button button--colorful button--margin" href="#">HIRE ME</a>
-            </div>            
+            </div>       
           </div>
         </div>
       </div>
@@ -326,6 +326,14 @@
   </footer>
 </section> 
 </div>
+<script>
+  function confirmDownload() {
+    var userConfirmed = confirm("Apakah Anda ingin mengunduh CV?");
+    if (userConfirmed) {
+      window.location.href = 'assets/cvdiki.pdf';
+    }
+  }
+</script>
   <script src="assets/jquery/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/mixitup.js"></script>
